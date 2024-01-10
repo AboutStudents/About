@@ -215,14 +215,14 @@
         
         refBtn.addEventListener("click",(e) =>{
             e.preventDefault();
-            log.innerHTML = "Generating New Captcha...";
+            log.innerHTML = "درحال ساخت کپچا جدید...";
             log.style.color = 'white';
 
             setTimeout(gen,1500);
 
             function gen(){
                 field.value = "";
-                log.innerHTML = "Done!";
+                log.innerHTML = "تمام!";
                 log.style.color = 'rgb(201, 245, 9)';
 
                 generate();
