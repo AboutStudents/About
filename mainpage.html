@@ -21,40 +21,34 @@
       </div>
       <nav>
         <ul class="header_nav_menu_list flex_no_wrap_row_center">
-          <p style="background-color:powderblue;""><a href="pooya-zare.html">درباره پویا زارع</a></p>
-          <p style="background-color: aquamarine;"><a href="taha-barzegar.html">درباره طاها برزگر</a></p>
-          <p style="background-color: blueviolet;"><a href="bardia.html">درباره بردیا</a></p>
-          <p style="background-color: crimson;"><a href="abolfazl-ahmadi.html">درباره ابوالفضل احمدی</a></p>
-          <p style="background-color: chartreuse;"><a href="mohammadreza-zare.html">محمدرضا زارع</a></p>
-          <p style="background-color: black;"><a href="mohammadtaha-maasoomi.html">درباره محمدطاها معصومی</a></p>
-          <p style="background-color: cornflowerblue;"><a href="parsa-zare.html">درباره پارسا زارع</a></p>
-          <p style="background-color: darkslategrey;"><a href="amirali-kochaki.html">درباره امیرعلی کوچکی</a></p>
-          <p style="background-color: rebeccapurple;"><a href="amirabbas-ghove.html">درباره امیر عباس قوه</a></p> 
+          <h1 style="background-color:powderblue;""><a href="pooya-zare.html">درباره پویا زارع</a></h1>
+          <h2 style="background-color: aquamarine;"><a href="taha-barzegar.html">درباره طاها برزگر</a></h2>
+          <h3 style="background-color: blueviolet;"><a href="bardia.html">درباره بردیا</a></h3>
+          <h4 style="background-color: crimson;"><a href="abolfazl-ahmadi.html">درباره ابوالفضل احمدی</a></h4>
+          <h5 style="background-color: chartreuse;"><a href="mohammadreza-zare.html">محمدرضا زارع</a></h5>
+          <h6 style="background-color: black;"><a href="mohammadtaha-maasoomi.html">درباره محمدطاها معصومی</a></h6>
+          <h7 style="background-color: cornflowerblue;"><a href="parsa-zare.html">درباره پارسا زارع</a></h7>
+          <h8 style="background-color: darkslategrey;"><a href="amirali-kochaki.html">درباره امیرعلی کوچکی</a></h8>
+          <h9 style="background-color: rebeccapurple;"><a href="amirabbas-ghove.html">درباره امیر عباس قوه</a></h9> 
         </ul>
       </nav>
       <section class="news">
-        <div class="container">
-            <div class="news-title flex">
+        <ul class="container">
+            <ul class="news-title flex">
                 <img src="news.webp" alt="image of a box" width="20px" height="20px>
 
-                <div class="news-title-content">
-                    <h1 style="background-color: aquamarine;">اخبار</h1>
-                    <span style="background-color: aquamarine;">همه چیز را درباره سایت ببین!</span>                    
-                </div>
-            </div>
-        
-            <div class="news-containers">
-                <div class="news-container news-primary">
-                    <div class="news-item">
-                        <div class="news-item-title flex">
-                            <img src="" alt="">
-        
-                            <div class="news-title-text">
-                                <h1 style="background-color: blanchedalmond;">دانش اموزان جدیدی به سایت اضافه شدند</h1>
-                                <span style="background-color: blanchedalmond;">1/6/2024</span>
-                            </div>
-                        </div>
+                <ul class="header_nav_menu_list flex_no_wrap_row_center">
+                    <h1 style="background-color: aquamarine;">سخنی از بزرگان</h1>
+                    <span style="background-color: aquamarine;"><a id="randomWord"></a></span>                    
+                </ul>
+              </ul>
     </section>
-  </script>
+    <script>
+    var words = ['پیروزی ان نیست که هرگز زمین نخوری , ان است که بعد از هر زمین خوردنی برخیزی', 'ما ندرتا درباره ان چه که داریم فکر میکنیم , درحالی که پیوسته در اندیشه ی چیز هایی هستیم که ندارم', 'زندگی ات را قربانی چیزی مکن , همه چیز را قربانی زندگی ات کن', 'برای اداره کردن خویش از سرت استفاده کن و برای اداره کردن دیگران از قلبت'];
+    var randomIndex = Math.floor(Math.random() * words.length);
+    var randomWord = words[randomIndex];
+
+    document.getElementById('randomWord').innerText = randomWord;
+    </script>
   </body>
 </html>
